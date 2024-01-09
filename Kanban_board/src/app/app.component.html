@@ -1,0 +1,22 @@
+<div class="todo">
+<div class="contenedor">
+<h1>Pendientes</h1>
+
+<app-tareas [tareas]="tareas" *ngFor="let tareas of obtenerEventosPendientes()"></app-tareas>
+</div>
+
+<div class="contenedor">
+    <h1>Progreso</h1>
+    
+    <app-tareas [tareas]="tareas" *ngFor="let tareas of obtenerEventosProximas()"></app-tareas>
+    
+    </div>
+
+    <div class="contenedor">
+        <h1>Finalizadas</h1>
+        
+        <app-tareas [tareas]="tareas" *ngFor="let tareas of obtenerEventosFinalizadas()"></app-tareas>
+        </div>
+
+    </div>
+

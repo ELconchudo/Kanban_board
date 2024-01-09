@@ -1,0 +1,10 @@
+<div class="card">
+    <img [src]="tareas.img">
+<p>{{ tareas.titulo }}</p>
+<button [ngClass]="colorFecha()">{{ tareas.fechaFin }}</button>
+<div class="userdiv" *ngFor="let usuarios of tareas.usuarios">
+    <span class="tooltip" title="{{usuarios.alt}}">
+    <img class="user" [src]="usuarios.img">
+</span>
+</div>
+</div>

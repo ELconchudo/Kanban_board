@@ -1,0 +1,14 @@
+body{
+    align-items: center;
+    display: flex;
+}
+
+.todo{
+    display: flex;
+}
+
+.contenedor{
+    margin-left: 20px;
+    text-align: center;
+}
+
